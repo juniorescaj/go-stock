@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  mongo:
+     image: mongo:latest
+     container_name: "mongo-go-app"
+     ports:
+       - "27017:27017"
+     command: mongod
+     expose:
+       - 27017
